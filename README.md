@@ -52,7 +52,7 @@ they application is running properly in the newly deployed environment.
 Unit testing is a process in which the smallest independent module is tested to check whether its working properly or not.
 unit testing can be done manually but is often automated.
 
-![image unittestimage](/Image/unittestimage.png)
+![image unittestimage](Image/unittestimage.png)
 
 ## Difference Between Manual Testing and Automation Testing
 |Manual Testing                           |  Automation Testing                          |
@@ -160,7 +160,7 @@ Junit Vintage : A TestEngine to run JUnit 3 & JUnit 4 tests and migration suppor
 
 ## Difference Between Junit 4 and Junit 5
 
-![image unittestimage](/Image/Junit4andjunit5.webp)
+![image unittestimage](Image/Junit4andjunit5.webp)
 
 ## Learn How to write unit test by using Junit 5
 
@@ -190,7 +190,7 @@ Add dependencies to the JUnit5 API and engine for your test code
 
 Therefore you need to adjust your pom file, similar to the following:
 
-![image unittestimage](/Image/junit-tutorial-maven-reload.png)
+![image unittestimage](Image/junit-tutorial-maven-reload.png)
 
 Once you have done this, you can start using JUnit5 in your Maven project for writing unit tests.
 
