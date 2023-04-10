@@ -107,7 +107,7 @@ It’s recommended unit testing be used in conjunction with other testing activi
 Follows the test a little, code a little approach.
 Increase productivity of a programmer and stability of code.
 
- Features of Junit:
+ **1. Features of Junit**
 
 
 -an open source framework.
@@ -167,7 +167,8 @@ Junit Vintage : A TestEngine to run JUnit 3 & JUnit 4 tests and migration suppor
 This tutorial explains unit testing with JUnit with the JUnit 5 framework (JUnit Jupiter). It explains the creation of JUnit 5 tests with the Maven and Gradle build system.
  It demonstrates the usage of the Eclipse IDE for developing software tests with JUnit 5 but this tutorial is also valid for tools like Visual Code or IntelliJ.
 
- ## Configuration for using Junit 5
+
+ **Configuration for using Junit 5**
 
 
 To use JUnit 5 you have to make the libraries available for your test code. Jump to the section which is relevant to you, for example read the Maven part, if you are using Maven as build system.
@@ -863,5 +864,147 @@ import org.springframework.test.annotation.Rollback;
 @DataJpaTest -:
 
 This annotation will disable full auto-configuration and instead apply only configuration relevant to JPA tests. By default, it will use an embedded, in-memory H2 database instead of the one declared in the configuration file, for faster test running time as compared to disk file database.
+
+
+# Junit Report Generation Example
+
+In this example we shall show users how we can generate reports using the Maven and JUnit. JUnit Report Generation example demonstrates the basic usage of the reporting functionality of JUnit tests.
+
+As you already know, JUnit is the basic unit test framework for the Java programmers. This example focuses more on generating the report. Let’s start by analyzing the ways through which we can generate the HTML reports of our test cases.
+
+* 1. Introduction
+
+JUnit helps us in validation our methods for functionality. But in some cases we have to see the report also for the test cases. In the process of developing reports, Maven plays an important role as it will make a text, XML and also HTML reports. All JUnit test cases with the details are printed in the reports. We will see in this example how this can be achieved.
+
+However, reports can be generated in many different ways like with Ant, TestNG and other independent libraries. But we will focus on very simple case i.e. with the help of Maven.
+
+Note: We will be using the surefire plugin of maven to generate the reports for our example.
+
+* 2. Technologies Used:
+
+We will be using following technologies to work n this example
+
+- Java – primary language for coding
+- Sts – IDE for coding
+- Maven – dependency management tool and also to generate reports for our test cases.
+- JUnit 4.12 – testing framework
+
+* 3. Project Dependency:
+
+ First of all we need to put the dependencies for our project. Simply put the following line in the pom.xml file.
+
+```markdown
+<dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+        </dependency>
+    </dependencies>
+ 
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+ 
+    <reporting>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-report-plugin</artifactId>
+                <version>2.19.1</version>
+            </plugin>
+        </plugins>
+    </reporting>
+```
+
+Lines 1-7 will download JUnit jar file.
+
+Lines 9-12 will ask Maven to use Java 1.8 for this example.
+
+Lines 14-22 are used to fetch the surefire plugin that helps us to generate the report for our test cases.
+
+This will ready our project. Let’s start creating a unit test case.
+
+* 4. JUnit Report Generation Test Class
+
+We will be creating a small test class with only 4 test cases to be tested. By default all test cases will be passed so that our report will be generated.
+
+```java
+package junitreportgeneration;
+ 
+import static org.hamcrest.CoreMatchers.instanceOf;
+import static org.hamcrest.CoreMatchers.is;
+import static org.junit.Assert.assertThat;
+import static org.junit.Assert.assertTrue;
+ 
+import java.util.ArrayList;
+import java.util.List;
+ 
+import org.junit.Test;
+ 
+public class JUnitReportGenerationTest {
+ 
+    private String developer = "Vinod";
+ 
+    @Test
+    public void instanceOfTest() {
+        assertThat(new ArrayList(), instanceOf(List.class));
+    }
+ 
+    @Test
+    public void assertTrueTest() {
+        assertTrue(true);
+    }
+ 
+    @Test
+    public void equalToTest() {
+        assertThat(developer, is("Vinod"));
+    }
+     
+    @Test
+    public void failTest() {
+        assertThat(developer, is("Any"));
+    }
+}
+```
+This is a simple Test class.
+
+* 5. Generate Reports:
+
+     To generate a report you need to simple run the Maven command:
+    
+     mvn clean install test surefire-report:report
+
+    To run from eclipse you need to follow some steps.
+
+    - Right click on project
+    - Run As -> Run Configurations…
+    - You will be prompted with the screen
+
+ ![image unittestimage](Image/junit-report-generation-run-1.jpg.webp)
+ 
+   - Double Click on Maven Build
+   - You will be prompted with following screen
+
+ ![image unittestimage](Image/junit-report-generation-run-2.jpg.webp)
+
+   - For Base Directory field, Select Workspace… button and select your project
+
+   - Fill in the details as shown above and click on Apply button.
+
+   - Now click on Run button on same window
+
+   You will see the output generated in the target folder.
+
+ ![image unittestimage](Image/junit-report-generation-project-structure.jpg.webp)
+
+Open sure-fire.html file from target -> site folder in any browser. You will see the following output.
+
+  ![image unittestimage](Image/Screenshot%202023-04-06%20150434.png)
+
+
+
+
 
 
