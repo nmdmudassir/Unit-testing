@@ -206,11 +206,31 @@ Typical, unit tests are created in a separate source folder to keep the test cod
 -> src/main/java - for Java classes
 
 -> src/test/java - for test classes
-## Executing a Test method code
+
+## Executing a Test method 
+
 create a new file in src/test/java then write the test cases of a method and excute it .
 If test cases passed it will come in green progress bar and if it fails then it will come in  dark.
 For Executing a test case-> right click on the method option will come "Junit test case"
 click on these it will execute automated.
+
+## Debugging a Test Failure
+
+In the case of a test failure you can follow these steps to debug it:
+
+* 1. Double click the failure entry from the Failures tab in the JUnit view to open the corresponding file in the editor.
+
+* 2. Set a breakpoint at the beginning of the test method.
+
+* 3. Select the test case and execute  Debug As>JUnit Test from the Debug drop down.
+
+A JUnit launch configuration has a "keep alive" option. If your Java virtual machine supports "hot code 
+
+replacement" you can fix the code and rerun the test without restarting the full test run. To enable this 
+
+option select the Keep JUnit running after a test run when debugging checkbox in the JUnit launch 
+
+configuration.
 
 ## The sequential workflow of the lifecycle annotations for JUnit 5 
 
@@ -1001,7 +1021,9 @@ This is a simple Test class.
 
 Open sure-fire.html file from target -> site folder in any browser. You will see the following output.
 
-  ![image unittestimage](Image/Screenshot%202023-04-06%20150434.png)
+  ![image unittestimage](Image/TestReport.png)
+
+
 
 
 
