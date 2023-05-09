@@ -64,98 +64,162 @@ unit testing can be done manually but is often automated.
 
 ## Unit Testing Tools:
 
-There are several automated unit test software available to assist with unit testing. We will provide a few examples below:
+There are several automated unit test software available to assist with unit testing. We will provide a few 
 
-Junit: Junit is a free to use testing tool used for Java programming language.  It provides assertions to identify test method. This tool test data first and then 
-inserted in the piece of code.
+examples below:
 
-NUnit:  NUnit is widely used unit-testing framework use for all .net languages.  It is an open source tool which allows writing scripts manually. It supports
- data-driven tests which can run in parallel.
+1. Junit: Junit is a free to use testing tool used for Java programming language.  It provides assertions to 
 
-JMockit:  JMockit is open source Unit testing tool.  It is a code coverage tool with line and path metrics. It allows mocking API with recording and verification
-syntax. This tool offers Line coverage, Path Coverage, and Data Coverage.
+   identify test method. This tool test data first and then inserted in the piece of code.
 
-EMMA:  EMMA is an open-source toolkit for analyzing and reporting code written in Java language. Emma support coverage types like method, line, basic block. 
-It is Java-based so it is without external library dependencies and can access the source code.
+2. NUnit:  NUnit is widely used unit-testing framework use for all .net languages.  It is an open source tool 
 
-PHPUnit: PHPUnit is a unit testing tool for PHP programmer. It takes small portions of code which is called units and test each of them separately.  
-The tool also allows developers to use pre-define assertion methods to assert that a system behave in a certain manner. 
+   which allows writing scripts manually. It supports data-driven tests which can run in parallel.
+
+3. JMockit:  JMockit is open source Unit testing tool.  It is a code coverage tool with line and path 
+
+   metrics. It allows mocking API with recording and verification syntax. This tool offers Line coverage, 
+   
+   Path Coverage, and Data Coverage.
+
+4. EMMA:  EMMA is an open-source toolkit for analyzing and reporting code written in Java language. Emma 
+
+   support coverage types like method, line, basic block. 
+
+   It is Java-based so it is without external library dependencies and can access the source code.
+
+5. PHPUnit: PHPUnit is a unit testing tool for PHP programmer. It takes small portions of code which is       
+
+called units and test each of them separately.  
+
+The tool also allows developers to use pre-define assertion methods to assert that a system behave in a 
+
+certain manner. 
 
 Notes: truth is Unit testing increase the speed of development.
 
 ## Unit Testing advantage and Disadvantage
 Unit Testing Advantage:
 
-Developers looking to learn what functionality is provided by a unit and how to use it can look at the unit tests to gain a basic understanding of the unit API.
+1. Developers looking to learn what functionality is provided by a unit and how to use it can look at the 
 
-Unit testing allows the programmer to refactor code at a later date, and make sure the module still works correctly (i.e. Regression testing). The procedure is to 
-write test cases for all functions and methods so that whenever a change causes a fault, it can be quickly identified and fixed.
+unit tests to gain a basic understanding of the unit API.
 
-Due to the modular nature of the unit testing, we can test parts of the project without waiting for others to be completed.
+2. Unit testing allows the programmer to refactor code at a later date, and make sure the module still works 
 
+correctly (i.e. Regression testing). The procedure is to write test cases for all functions and methods so 
+
+that whenever a change causes a fault, it can be quickly identified and fixed.
+
+3. Due to the modular nature of the unit testing, we can test parts of the project without waiting for others 
+
+to be completed.
+
+<!--style="font-size:30px"-->
 Unit Testing Disadvantages:
 
-Unit testing can’t be expected to catch every error in a program. It is not possible to evaluate all execution paths even in the most trivial programs.
+1. Unit testing can’t be expected to catch every error in a program. It is not possible to evaluate all 
 
-Unit testing by its very nature focuses on a unit of code. Hence it can’t catch integration errors or broad system level errors.
+execution paths even in the most trivial programs.
 
-It’s recommended unit testing be used in conjunction with other testing activities.
+2. Unit testing by its very nature focuses on a unit of code. Hence it can’t catch integration errors or 
+
+broad system level errors.
+
+3. It’s recommended unit testing be used in conjunction with other testing activities.
 
 # Junit and it's Feature
 
--Junit is a Unit testing framework for java programming.
-Follows the test a little, code a little approach.
-Increase productivity of a programmer and stability of code.
+* Junit is a Unit testing framework for java programming.
 
- **1. Features of Junit**
+* Follows the test a little, code a little approach.
 
+* Increase productivity of a programmer and stability of code.
 
--an open source framework.
+<!--style="font-size:30px"-->
+Features of Junit
 
--Annotation to identify test methods.
+1. an open source framework.
 
--Assertions for testing expected results.
+2. Annotation to identify test methods.
 
--allow you to write codes faster ,which increase quality.
+3. Assertions for testing expected results.
 
--simple to use.
+4. allow you to write codes faster ,which increase quality.
 
--Runs automatically.check their own results and prvide immediate feedback no need to manually comb through a report of test results.
+5. simple to use.
 
--can be organised into test suites.
+6. Runs automatically.check their own results and prvide immediate feedback no need to manually comb through 
 
--progress bar facility.
+   a report of test results.
+
+7. can be organised into test suites.
+
+8. progress bar facility.
 
 ## What is unit test case?
 
--part of code which ensures that another part of code is works as expected.
+* A Unit Test Case is a part of code, which ensures that another part of code (method) works as expected. To 
 
--characterizations of unit test cases are:
+  achieve the desired results quickly, a test framework is required. JUnit is a perfect unit test framework 
+  
+  for Java programming language.
 
-Known input
+* A formal written unit test case is characterized by a known input and an expected output, which is worked 
 
-Expected result/output.
+  out before the test is executed. The known input should test a precondition and the expected output should 
+  
+  test a post-condition.
 
-precondition
+* There must be at least two unit test cases for each requirement − one positive test and one negative test. 
 
-post condition
+  If a requirement has sub-requirements, each sub-requirement must have at least two test cases as positive 
+  
+  and negative.
+
+<!--style="font-size:20px"-->
+characterizations of unit test cases are:
+
+* Known input
+
+* Expected result/output.
+
+* precondition
+
+* post condition
 
 Notes:At least two test case for each requirement(positive and negative).
 
 
 # Learn Junit 5
 
-JUnit 5 is a opensource and next generation of JUnit for Java 8 and greater versions. In our JUnit 5 tutorials we have covered most of the examples for writing tests. JUnit 5 requires Java 8 or higher at runtime.
+* JUnit 5 is a opensource and next generation of JUnit for Java 8 and greater versions. In our JUnit 5 
 
-Unlike previous versions of JUnit, and JUnit 5 is composed of several different modules from three different sub-projects. In this Junit 5 tutorial we have focused on Junit Jupiter for writing tests and Junit platform for executing tests.
+tutorials we have covered most of the examples for writing tests. JUnit 5 requires Java 8 or higher at 
 
-JUnit 5 = JUnit Platform + JUnit Jupiter + JUnit Vintage
+runtime.
 
-Junit Platform : It is a Launcher for test frameworks on JVM, defines TestEngine API for discovering and executing tests, provides ConsoleLauncher for running Junit vintage and Junit Jupiter tests, and first class support for IDEs and build tools like Gradle, Maven etc.
+* Unlike previous versions of JUnit, and JUnit 5 is composed of several different modules from three 
 
-Junit Jupiter : A new programming model for writing unit tests, an extension model for Junit 4 and provides standard assertions.
+  different sub-projects. In this Junit 5 tutorial we have focused on Junit Jupiter for writing tests and 
+  
+  Junit platform for executing tests.
 
-Junit Vintage : A TestEngine to run JUnit 3 & JUnit 4 tests and migration support to JUnit 5 (JUnit Jupiter).
+* JUnit 5 = JUnit Platform + JUnit Jupiter + JUnit Vintage
+
+* Junit Platform : It is a Launcher for test frameworks on JVM, defines TestEngine API for discovering and 
+
+  executing tests, provides ConsoleLauncher for running Junit vintage and Junit Jupiter tests, and first 
+  
+  class support for IDEs and build tools like Gradle, Maven etc.
+
+* Junit Jupiter : A new programming model for writing unit tests, an extension model for Junit 4 and provides 
+
+  standard assertions.
+
+* Junit Vintage : A TestEngine to run JUnit 3 & JUnit 4 tests and migration support to JUnit 5 (JUnit 
+
+  Jupiter).
 
 
 ## Difference Between Junit 4 and Junit 5
@@ -164,30 +228,39 @@ Junit Vintage : A TestEngine to run JUnit 3 & JUnit 4 tests and migration suppor
 
 ## Learn How to write unit test by using Junit 5
 
-This tutorial explains unit testing with JUnit with the JUnit 5 framework (JUnit Jupiter). It explains the creation of JUnit 5 tests with the Maven and Gradle build system.
- It demonstrates the usage of the Eclipse IDE for developing software tests with JUnit 5 but this tutorial is also valid for tools like Visual Code or IntelliJ.
+This tutorial explains unit testing with JUnit with the JUnit 5 framework (JUnit Jupiter). It explains the 
 
+creation of JUnit 5 tests with the Maven and Gradle build system.
 
- **Configuration for using Junit 5**
+It demonstrates the usage of the Eclipse IDE for developing software tests with JUnit 5 but this tutorial is 
 
+also valid for tools like Visual Code or IntelliJ and Spring Tool suites.
 
-To use JUnit 5 you have to make the libraries available for your test code. Jump to the section which is relevant to you, for example read the Maven part, if you are using Maven as build system.
+<!--style="font-size:30px"-->
+Configuration for using Junit 5
 
+To use JUnit 5 you have to make the libraries available for your test code. Jump to the section which is 
+
+relevant to you, for example read the Maven part, if you are using Maven as build system.
+
+<!--style="font-size:20px"-->
 Configure Maven to use JUnit 5 -:
 
-== Configure Maven dependencies for JUnit 5
+* Configure Maven dependencies for JUnit 5
 
-=== Steps required to configure Maven to use JUnit5
+* Steps required to configure Maven to use JUnit5
 
 To use JUnit5 in an Maven project, you need to:
 
-Configure to use Java 11 or higher, as this is required by JUnit5
+1. Configure to use Java 11 or higher, as this is required by JUnit5
 
-Configure the maven-surefire-plugin and maven-failsafe-plugin to be at version 2.22.2 so that they can run JUnit5
+2. Configure the maven-surefire-plugin and maven-failsafe-plugin to be at version 2.22.2 so that they can run 
 
-Add dependencies to the JUnit5 API and engine for your test code
+   JUnit5
 
-=== Configure Maven
+3. Add dependencies to the JUnit5 API and engine for your test code
+
+* Configure Maven
 
 Therefore you need to adjust your pom file, similar to the following:
 
@@ -195,24 +268,86 @@ Therefore you need to adjust your pom file, similar to the following:
 
 Once you have done this, you can start using JUnit5 in your Maven project for writing unit tests.
 
-=== Update Maven settings (in case you are using the Eclipse IDE)
+* Update Maven settings (in case you are using the Eclipse IDE and Spring tool suite)
 
-Right-click your pom file, select Maven  Update Project and select your project. This triggers an update of your project settings and dependencies.
+Right-click your pom file, select Maven  Update Project and select your project. This triggers an update of 
+
+your project settings and dependencies.
 
 ## Where should the test be located?
 
-Typical, unit tests are created in a separate source folder to keep the test code separate from the real code. The standard convention from the Maven and Gradle build tools is to use:
+Typical, unit tests are created in a separate source folder to keep the test code separate from the real 
 
--> src/main/java - for Java classes
+code. The standard convention from the Maven and Gradle build tools is to use:
 
--> src/test/java - for test classes
+* src/main/java - for Java classes
 
-## Executing a Test method 
+* src/test/java - for test classes
 
-create a new file in src/test/java then write the test cases of a method and excute it .
-If test cases passed it will come in green progress bar and if it fails then it will come in  dark.
-For Executing a test case-> right click on the method option will come "Junit test case"
-click on these it will execute automated.
+## Executing a Test method (Spring Tool Suites IDE)
+
+1. create a new file in src/test/java then write the test cases of a method and excute it .
+
+2. For Executing a test case-> Left click on the method option will come "Junit test case"
+
+  click on these it will execute automated.
+
+ 3. If test cases passed it will come in green progress bar and if it fails then it will come in  dark. 
+
+
+These are the Folder Structure:
+
+![image unittestimage](Image/Filestructure.png)
+
+<!--style="font-size:30px"-->
+FirstUnitTest.java
+
+```markdown
+package com.first.junit;
+
+import org.junit.Test;
+
+public class FirstUnitTest {
+
+	@Test
+	public void test() {
+		System.out.println("to test the cases");
+	}
+}
+```
+
+Output:
+
+If Test Cases are Passed Green Bar Will come
+
+![image unittestimage](Image/code2.png)
+
+<!--style="font-size:20px"-->
+Example 2
+
+```markdown
+package com.first.junit;
+
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Test;
+
+public class FirstUnitTest {
+
+	  @Test
+	   public  void helloJUnit5() {
+	        assertEquals(10, 5+6);
+	    }
+}
+```
+
+<!--style="font-size:20px"-->
+Output:
+
+If Test case Failed it will be dark progress Bar
+
+![image unittestimage](Image/code3.png)
+
 
 ## Debugging a Test Failure
 
@@ -236,25 +371,28 @@ configuration.
 
 ![image unittestimage](/Image/lifecycleofannotation.png)
 
--> The method annotated with @BeforeAll is executed once at the start of the class.
+* The method annotated with @BeforeAll is executed once at the start of the class.
 
--> The method annotated with @BeforeEach executes before Testcase 1 begins.
+* The method annotated with @BeforeEach executes before Testcase 1 begins.
 
--> The method Testcase1 annotated with @Test is the testcase in the class.
+* The method Testcase1 annotated with @Test is the testcase in the class.
 
--> The method annotated with @AfterEach runs after Testcase 1 completes execution.
+* The method annotated with @AfterEach runs after Testcase 1 completes execution.
 
--> The method annotated with @BeforeEach executes before Testcase 2 begins.
+* The method annotated with @BeforeEach executes before Testcase 2 begins.
 
--> The method Testcase2 annotated with @Test is the testcase in the class.
+* The method Testcase2 annotated with @Test is the testcase in the class.
 
--> The method annotated with @AfterEach runs after Testcase 2 completes execution.
+* The method annotated with @AfterEach runs after Testcase 2 completes execution.
 
--> The method annotated with @AfterAll is executed once at the end of the class after both testcase 1 and 2    are executed.
+* The method annotated with @AfterAll is executed once at the end of the class after both testcase 1 and 2    
+
+  are executed.
 
 ## Junit 5 Annotation with Example
 
-@Test
+<!--style="font-size:20px"-->
+*  @Test
 
 This annotation denotes that a method is a test method. Note this annotation does not take any attributes.
 
@@ -271,7 +409,13 @@ class JUnit5Test {
 }
 ```
 
-@Parameterized Test
+Output
+
+![image unittestimage](/Image/Test1.png)
+
+
+<!--style="font-size:20px"-->
+*  @Parameterized Test
 
 Parameterized tests make it possible to run a test multiple times with different arguments. They are declared just like regular @Test methods but use the @ParameterizedTest annotation instead.
 
@@ -297,9 +441,17 @@ class JUnit5Test {
 }
 ```
 
-@Repeated Test
+Output
 
-JUnit 5 has the ability to repeat a test a specified number of times simply by annotating a method with @RepeatedTest and specifying the total number of repetitions desired.
+![image unittestimage](/Image/Parameterised.png)
+
+
+<!--style="font-size:20px"-->
+*  @Repeated Test
+
+JUnit 5 has the ability to repeat a test a specified number of times simply by annotating a method with 
+
+@RepeatedTest and specifying the total number of repetitions desired.
 
 Each invocation of a repeated test behaves like the execution of a regular @Test method.
 
@@ -329,9 +481,18 @@ class JUnit5Test {
     }
 }
 ```
-@DisplayName
 
-Test classes and test methods can declare custom display names that will be displayed by test runners and test reports.
+Output
+
+![image unittestimage](/Image/RepeatedTest.png)
+
+
+<!--style="font-size:20px"-->
+*  @DisplayName
+
+Test classes and test methods can declare custom display names that will be displayed by test runners and 
+
+test reports.
 
 Example:
 
@@ -355,9 +516,16 @@ class JUnit5Test {
     }
 }
 ```
-@BeforeEach
+output
 
-The @BeforeEach annotation denotes that the annotated method should be executed before each test method, analogous to JUnit 4’s @Before.
+![image unittestimage](/Image/Displayname.png)
+
+<!--style="font-size:20px"-->
+*  @BeforeEach
+
+The @BeforeEach annotation denotes that the annotated method should be executed before each test method, 
+
+analogous to JUnit 4’s @Before.
 
 Example:
 
@@ -383,7 +551,7 @@ class JUnit5Test {
 }
 
 
-Output:
+Output:(sts console)
 
 firstTest
 1
@@ -391,7 +559,11 @@ secondTest
 2
 ```
 
-@AfterEach
+![image unittestimage](/Image/BeforeEach.png)
+
+
+<!--style="font-size:20px"-->
+*  @AfterEach
 
 This annotation denotes that the annotated method should be executed after each test method, analogous to JUnit 4’s @After. For example, if the tests need to reset a property after each test, we can annotate a method with @AfterEach for that task.
 
@@ -418,7 +590,7 @@ class JUnit5Test {
     }
 }
 
-output:
+output(Sts console)
 
 1
 firstTest
@@ -426,9 +598,15 @@ firstTest
 secondTest
 ```
 
-@BeforeAll
+![image unittestimage](/Image/Aftereach.png)
 
-This annotation executes a method before all tests. This is analogous to JUnit 4’s @BeforeClass. The @BeforeAll annotation is typically used to initialize various things for the tests.
+
+<!--style="font-size:20px"-->
+*  @BeforeAll
+
+This annotation executes a method before all tests. This is analogous to JUnit 4’s @BeforeClass. The 
+
+@BeforeAll annotation is typically used to initialize various things for the tests.
 
 Example:
 
@@ -452,16 +630,23 @@ class JUnit5Test {
     }
 }
 
-output:
+output(Sts console)
 
 Only run once before all tests
 1
-2
 ```
 
-@AfterAll
+![image unittestimage](/Image/BeforeAll.png)
 
-The @AfterAll annotation is used to execute the annotated method, only after all tests have been executed. This is analogous to JUnit 4’s @AfterClass. We use this annotation to tear down or terminate all processes at the end of all tests.
+
+<!--style="font-size:20px"-->
+*  @AfterAll
+
+The @AfterAll annotation is used to execute the annotated method, only after all tests have been executed. 
+
+This is analogous to JUnit 4’s @AfterClass. We use this annotation to tear down or terminate all processes at 
+
+the end of all tests.
 
 Example:
 
@@ -485,14 +670,17 @@ class JUnit5Test {
     }
 }
 
-output:
+output(Sts console)
 
 1
 2
 Only run once after all tests
 ```
 
-@Tag
+![image unittestimage](/Image/Afterall.png)
+
+<!--style="font-size:20px"-->
+*  @Tag
 
 We can use this annotation to declare tags for filtering tests, either at the class or method level.
 
@@ -519,11 +707,18 @@ class JUnit5Test {
 }
 ```
 
-@Disabled
+![image unittestimage](/Image/Tag.png)
 
-The @Disabled annotation is used to disable or skip tests at class or method level. This is analogous to JUnit 4’s @Ignore.
+<!--style="font-size:20px"-->
+*  @Disabled
 
-When declared at class level, all @test methods are skipped. When we use @Disabled at the method level, only the annotated method is disabled.
+The @Disabled annotation is used to disable or skip tests at class or method level. This is analogous to 
+
+JUnit 4’s @Ignore.
+
+When declared at class level, all @test methods are skipped. When we use @Disabled at the method level, only 
+
+the annotated method is disabled.
 
 Example:
 
@@ -544,18 +739,28 @@ class DisabledTestsDemo {
 }
 ```
 
+![image unittestimage](/Image/Disabled.png)
+
+
+
 # Junit 5-UsingAssertion
 
-All the assertions are in the Assert class.
+* All the assertions are in the Assert class.
 
-public class Assert extends java.lang.Object
+* public class Assert extends java.lang.Object
 
 
-JUnit 5 assertions make it easier to verify that the expected test results match the actual results. If any assertion of a test will fail, the test will fail. Similarly, if all assertions of a test pass, the test will pass.
+* JUnit 5 assertions make it easier to verify that the expected test results match the actual results. If any 
 
-The JUnit 5 assertions are static methods in the org.junit.jupiter.api.Assertions class. 
+  assertion of a test will fail, the test will fail. Similarly, if all assertions of a test pass, the test 
+  
+  will pass.
 
-Some of the important methods of Assert class are as follows −:
+* The JUnit 5 assertions are static methods in the org.junit.jupiter.api.Assertions class. 
+
+
+   <!--style="font-size:20px"-->
+   Some of the important methods of Assert class are as follows −:
 
 1.  void assertEquals(boolean expected, boolean actual)
 
@@ -589,7 +794,7 @@ Some of the important methods of Assert class are as follows −:
 
     The assertArrayEquals() method will test whether two arrays are equal to each other.
 
-
+<!--style="font-size:20px"-->
 Example:
 
 ```java
@@ -614,7 +819,7 @@ String str3 = null;
 
 String str4 = "abc";
 
-String str5 = "abc"
+String str5 = "abc";
 		
 int val1 = 5;
 
@@ -661,11 +866,22 @@ assertNotSame(str1,str3);
 }
 
 ```
+
+<!--style="font-size:30px"-->
+Output
+
+![image unittestimage](Image/Assertion.png)
+
 # Junit Tests For Spring Data JPA(Test CRUD Operations)
 
 1. Required Dependencies
 
-If you create a Spring Boot project using Spring Tool Suite IDE or directly from Spring Initializr, the dependency spring boot starter test is included by default. And we need to add dependencies for the in-memory database (H2) and real database (MySQL).
+If you create a Spring Boot project using Spring Tool Suite IDE or directly from Spring Initializr, the 
+
+dependency spring boot starter test is included by default. And we need to add dependencies for the in-memory 
+
+database (H2) and real database (MySQL).
+
 So make sure to declare the following dependencies in the Maven’s project file:
 
 ```markdown
@@ -753,7 +969,11 @@ public class Product {
 }
 ```
 
-As you can see, this is a simple entity class with only 3 fields: id, name and price. The getters and setters are not shown for brevity. We will use Hibernate forward engineering to create the corresponding table in the database when running tests.
+As you can see, this is a simple entity class with only 3 fields: id, name and price. The getters and setters 
+
+are not shown for brevity. We will use Hibernate forward engineering to create the corresponding table in the 
+
+database when running tests.
 
 3. Code Repository Interface
 
@@ -771,11 +991,15 @@ public interface ProductRepository extends CrudRepository<Product, Integer> {
 
 ```
 
-Besides the default CRUD methods extended from CrudRepository, we declare a custom method findByName() – and by convention, this method will return a Product object by its name.
+Besides the default CRUD methods extended from CrudRepository, we declare a custom method findByName() – and 
+
+by convention, this method will return a Product object by its name.
 
 4. Configure database connection properties
 
-Next, open the Spring Boot configuration file (application.properties) and specify the properties for database connection as follows:
+Next, open the Spring Boot configuration file (application.properties) and specify the properties for 
+
+database connection as follows:
 
 ```markdown
 spring.jpa.hibernate.ddl-auto=create
@@ -786,24 +1010,27 @@ spring.jpa.show-sql=true
 spring.jpa.properties.hibernate.format-sql=true
 ```
 
-Make sure that you created the database schema named test in MySQL server. Note that we specify create value for the spring.jpa.hibernate.ddl-auto property, so Hibernate will create the database table upon startup. And it will drop the table if exists.
+Make sure that you created the database schema named test in MySQL server. Note that we specify create value 
+
+for the spring.jpa.hibernate.ddl-auto property, so Hibernate will create the database table upon startup. And 
+
+it will drop the table if exists.
 
 5. Code Tests for CRUD operations
 
 Create the ProductRepositoryTests class under src/test/java directory with initial code as follows:
 
-```java
-
+```markdown
 package net.codejava;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertNull;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.util.List;
-import java.util.Optional;
 
-import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
@@ -813,67 +1040,71 @@ import org.springframework.test.annotation.Rollback;
 
 @DataJpaTest
 @AutoConfigureTestDatabase(replace = Replace.NONE)
-public class ProductTest {
+public class ProductTests {
 
-	@Autowired
-	private ProductRepository repo;
-
-	@Test
-	@Rollback(false)
-	public void testCreateProduct() {
-		Product product = new Product("iPhone 10", 789);
-		Product savedProduct = repo.save(product);
+	  @Autowired
+	    private ProductRepository repo;
+	  
+	  @Test
+	  @Rollback(false)
+	  public void testCreateProduct() {
+		  Product product = new Product("i phone 10", 780);
+		Product savedProduct =  repo.save(product);
 		assertNotNull(savedProduct);
-	}
+	  }
+	  
+	  @Test
+	  public void testFindProductByNamNotExist() {
+		  String name = "i phone 11";
+		  Product product = repo.findByName(name);
+		  assertNull(product);
+	  }
+	  
+     @Test 
+     @Rollback
+     public void testUpdateProduct() {
+    	 String productName = "Kindle Reader";
+    	 Product product = new Product(productName, 199);
+    	 product.setId(2);
+    	 repo.save(product);
+    	 Product updateProduct = repo.findByName(productName);
+    	 assertThat(updateProduct.getName()).isEqualTo(productName);
+    	  }
+     
+     @Test
+     public void testListProducts() {
+    	 List<Product> products = (List<Product>) repo.findAll();
+    	 
+    	 for(Product product : products) {
+    		 System.out.println(product);
+    	 }
+    	 assertThat(products).size().isGreaterThan(0);
+     }
+     
+     @Test
+     public void testDeleteProduct() {
+    	 Integer id = 2;
+    	 boolean isExistBeforeDelete = repo.findById(id).isPresent();
+    	 repo.deleteById(id);
+    	 boolean notExistAfterDelete = repo.findById(id).isPresent();
+    	 assertTrue(isExistBeforeDelete);
+    	 assertFalse(notExistAfterDelete);
 
-	
-	
-	@Test
-	public void findProductByNameExist() {
-		String name = "iPhone 10";
-		Product product = repo.findProductByName(name);
-		assertThat(product.getName()).isEqualTo(name);
-	}
-
-	@Test
-	public void findProductByNameNotExist() {
-		String name = "iPhone 11";
-		Product product = repo.findProductByName(name);
-		assertNull(product);
-	}
-
-	@Test
-	@Rollback(false)
-//	@DisplayName("Name is present or not")
-    public void testUpdateProduct() {
-		Product product = repo.findProductByName("iPhone 10");
-		product.setPrice(1000);
-
-		repo.save(product);
-
-		Product updatedProduct = repo.findProductByName("iPhone 10");
-
-		assertThat(updatedProduct.getPrice()).isEqualTo(1000);
-	}
-
-	@Test
-	@Rollback(false)
-	public void testDeleteProduct() {
-	    Product product = repo.findProductByName("iPhone 10");
-	     
-	    repo.deleteById(product.getId());
-	     
-	    Product deletedProduct = repo.findProductByName("iPhone 10");
-	     
-	    assertThat(deletedProduct).isNull();       
-	     
-	}
+     }
 }
 ```
 
+Output
+
+![image unittestimage](Image/ProductTest.png)
+
 Notes:
 
-I use @Rollback(false) to disable roll back to the data will be committed to the database and available for the next test methods which will run separately. And I use assertThat() method from AssertJ library for more readability than using JUnit’s assertion methods. So you need to add the following imports:
+I use @Rollback(false) to disable roll back to the data will be committed to the database and available for 
+
+the next test methods which will run separately. And I use assertThat() method from AssertJ library for more 
+
+readability than using JUnit’s assertion methods. So you need to add the following imports:
 
 ```java
 
@@ -883,18 +1114,34 @@ import org.springframework.test.annotation.Rollback;
 ```
 @DataJpaTest -:
 
-This annotation will disable full auto-configuration and instead apply only configuration relevant to JPA tests. By default, it will use an embedded, in-memory H2 database instead of the one declared in the configuration file, for faster test running time as compared to disk file database.
+This annotation will disable full auto-configuration and instead apply only configuration relevant to JPA 
+
+tests. By default, it will use an embedded, in-memory H2 database instead of the one declared in the 
+
+configuration file, for faster test running time as compared to disk file database.
 
 
 # Junit Report Generation Example
 
-In this example we shall show users how we can generate reports using the Maven and JUnit. JUnit Report Generation example demonstrates the basic usage of the reporting functionality of JUnit tests.
+In this example we shall show users how we can generate reports using the Maven and JUnit. JUnit Report 
 
-As you already know, JUnit is the basic unit test framework for the Java programmers. This example focuses more on generating the report. Let’s start by analyzing the ways through which we can generate the HTML reports of our test cases.
+Generation example demonstrates the basic usage of the reporting functionality of JUnit tests.
+
+As you already know, JUnit is the basic unit test framework for the Java programmers. This example focuses 
+
+more on generating the report. Let’s start by analyzing the ways through which we can generate the HTML 
+
+reports of our test cases.
 
 * 1. Introduction
 
-JUnit helps us in validation our methods for functionality. But in some cases we have to see the report also for the test cases. In the process of developing reports, Maven plays an important role as it will make a text, XML and also HTML reports. All JUnit test cases with the details are printed in the reports. We will see in this example how this can be achieved.
+JUnit helps us in validation our methods for functionality. But in some cases we have to see the report also 
+
+for the test cases. In the process of developing reports, Maven plays an important role as it will make a 
+
+text, XML and also HTML reports. All JUnit test cases with the details are printed in the reports. We will 
+
+see in this example how this can be achieved.
 
 However, reports can be generated in many different ways like with Ant, TestNG and other independent libraries. But we will focus on very simple case i.e. with the help of Maven.
 
