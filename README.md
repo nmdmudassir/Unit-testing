@@ -243,36 +243,48 @@ To use JUnit 5 you have to make the libraries available for your test code. Jump
 
 relevant to you, for example read the Maven part, if you are using Maven as build system.
 
-<!--style="font-size:20px"-->
-Configure Maven to use JUnit 5 -:
 
-* Configure Maven dependencies for JUnit 5
+1. open Spring Tool Suite 
 
-* Steps required to configure Maven to use JUnit5
+2. Create one project through spring starter new Project.(Choose Maven and java version 11 or higher)
 
-To use JUnit5 in an Maven project, you need to:
+![image unittestimage](Image/springstarter1.png)
 
-1. Configure to use Java 11 or higher, as this is required by JUnit5
+click on create a new spring started project
 
-2. Configure the maven-surefire-plugin and maven-failsafe-plugin to be at version 2.22.2 so that they can run 
+![image unittestimage](Image/springstarter2.png)
 
-   JUnit5
+click on Type choose a Maven and Java version 11 or higher and then click on Next button
 
-3. Add dependencies to the JUnit5 API and engine for your test code
+![image unittestimage](Image/springstarter3.png)
 
-* Configure Maven
+New spring starter project dependecies will be open.
 
-Therefore you need to adjust your pom file, similar to the following:
+Then choose dependencies as per requirement of Project and then click on Finish button.
 
-![image unittestimage](Image/junit-tutorial-maven-reload.png)
+3. After Building a project then add Junit5 dependencies in Pom.xml files.
+
+```htm
+		<dependency>
+	<groupId>org.junit.jupiter</groupId>
+	<artifactId>junit-jupiter</artifactId>
+	<version>5.9.3</version>
+</dependency>
+```
 
 Once you have done this, you can start using JUnit5 in your Maven project for writing unit tests.
 
-* Update Maven settings (in case you are using the Eclipse IDE and Spring tool suite)
+4. Update Maven settings (in case you are using the Eclipse IDE and Spring tool suite)
 
 Right-click your pom file, select Maven  Update Project and select your project. This triggers an update of 
 
 your project settings and dependencies.
+
+Note:
+
+If Project is already build then directly you can add these dependecies and execute the test cases.
+
+
 
 ## Where should the test be located?
 
@@ -286,9 +298,11 @@ code. The standard convention from the Maven and Gradle build tools is to use:
 
 ## Executing a Test method (Spring Tool Suites IDE)
 
-1. create a new file in src/test/java then write the test cases of a method and excute it .
+1. Open the Sts(Spring Tool Suites) 
 
-2. For Executing a test case-> Left click on the method option will come "Junit test case"
+2. In Project file in src/test/java then write the test cases of a method and excute it .
+
+3. For Executing a test case-> Left click on the method option will come "Junit test case"
 
   click on these it will execute automated.
 
