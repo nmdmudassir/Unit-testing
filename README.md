@@ -1285,6 +1285,20 @@ Open sure-fire.html file from target -> site folder in any browser. You will see
   ![image unittestimage](Image/TestReport.png)
 
 
+# Reference Notes Link
+
+* https://www.javatpoint.com/junit-tutorial
+
+* https://www.javaguides.net/p/junit-5.html
+
+* https://www.codejava.net/frameworks/spring-boot/junit-tests-for-spring-data-jpa
+
+* https://examples.javacodegeeks.com/java-development/core-java/junit/junit-report-generation-example/
+
+Video reference:
+
+* https://www.youtube.com/watch?v=w4MS3OMb5qU
+
 
 
 
